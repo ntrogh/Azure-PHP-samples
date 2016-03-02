@@ -1,0 +1,8 @@
+{
+    "name": "vendor/Project",
+    "description": "description_text",
+    "require": {
+        "nategood/httpful": "*",
+        "raveren/kint": "^1.0"
+    }
+}

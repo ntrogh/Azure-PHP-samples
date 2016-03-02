@@ -1,0 +1,150 @@
+// Retrieve the current data from the hotels index
+GET https://<search service name>.search.windows.net/indexes/hotels/docs?api-version=2015-02-28
+api-key: <search admin key>
+
+// Insert new data into the hotels index
+POST https://<search service name>.search.windows.net/indexes/hotels/docs/index?api-version=2015-02-28
+Content-type: application/json
+api-key: <search admin key>
+
+
+{
+  "value": [
+    {
+      "@search.score": 1,
+      "hotelId": "1058-441",
+      "baseRate": 199,
+      "description": "Best hotel in town",
+      "description_fr": "Meilleur hôtel en ville",
+      "hotelName": "Fancy Stay",
+      "category": "Luxury",
+      "tags": [
+        "pool",
+        "view",
+        "concierge"
+      ],
+      "parkingIncluded": false,
+      "smokingAllowed": false,
+      "lastRenovationDate": "2010-06-27T00:00:00Z",
+      "rating": 5,
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.131577,
+          47.678581
+        ],
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "EPSG:4326"
+          }
+        }
+      }
+    },
+    {
+      "@search.score": 1,
+      "hotelId": "665-437",
+      "baseRate": 79.99,
+      "description": "Cheapest hotel in town",
+      "description_fr": "Hôtel le moins cher en ville",
+      "hotelName": "Roach Motel",
+      "category": "Budget",
+      "tags": [
+        "motel",
+        "budget"
+      ],
+      "parkingIncluded": true,
+      "smokingAllowed": true,
+      "lastRenovationDate": "1982-04-28T00:00:00Z",
+      "rating": 1,
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.131577,
+          49.678581
+        ],
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "EPSG:4326"
+          }
+        }
+      }
+    },
+    {
+      "@search.score": 1,
+      "hotelId": "970-501",
+      "baseRate": 129.99,
+      "description": null,
+      "description_fr": null,
+      "hotelName": "Econo-Stay",
+      "category": "Budget",
+      "tags": [
+        "pool",
+        "budget"
+      ],
+      "parkingIncluded": true,
+      "smokingAllowed": null,
+      "lastRenovationDate": "1995-07-01T00:00:00Z",
+      "rating": 4,
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.131577,
+          46.678581
+        ],
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "EPSG:4326"
+          }
+        }
+      }
+    },
+    {
+      "@search.score": 1,
+      "hotelId": "956-532",
+      "baseRate": 129.99,
+      "description": null,
+      "description_fr": null,
+      "hotelName": "Express Rooms",
+      "category": "Budget",
+      "tags": [
+        "wifi",
+        "budget"
+      ],
+      "parkingIncluded": true,
+      "smokingAllowed": null,
+      "lastRenovationDate": "1995-07-01T00:00:00Z",
+      "rating": 4,
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.131577,
+          48.678581
+        ],
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "EPSG:4326"
+          }
+        }
+      }
+    },
+    {
+      "@search.score": 1,
+      "hotelId": "566-518",
+      "baseRate": 279.99,
+      "description": null,
+      "description_fr": null,
+      "hotelName": "Surprisingly Expensive Suites",
+      "category": "Luxury",
+      "tags": [],
+      "parkingIncluded": false,
+      "smokingAllowed": null,
+      "lastRenovationDate": null,
+      "rating": null,
+      "location": null
+    }
+  ]
+}
